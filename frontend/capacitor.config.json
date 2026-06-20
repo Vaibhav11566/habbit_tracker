@@ -1,0 +1,6 @@
+{
+  "appId": "com.habittracker.app",
+  "appName": "Habit Tracker",
+  "webDir": "out",
+  "bundledWebRuntime": false
+}
