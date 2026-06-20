@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Local Databases & Logs
+backend/mongodb_data/
+backend/mongodb.log
+backend/mongodb.log.lock
+
+# Build & Exports
+.next/
+**/out/
+**/.next/
+frontend/android/
+frontend/ios/
+
+# Environment Variables
+.env
+*.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumps.db
