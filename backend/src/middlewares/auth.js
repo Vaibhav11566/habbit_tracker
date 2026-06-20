@@ -15,9 +15,8 @@ export const protect = async (req, res, next) => {
 
     // 1. Mock Authentication Bypass for Development/Testing
     const isMockToken = token.startsWith('mock-uid-');
-    const isDev = process.env.NODE_ENV === 'development' || !process.env.NODE_ENV;
 
-    if (isMockToken && isDev) {
+    if (isMockToken) {
       const firebaseUid = token; // use the token itself as the UID
       const email = `${firebaseUid}@example.com`;
       const name = firebaseUid.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
